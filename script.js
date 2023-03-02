@@ -27,12 +27,14 @@ class Vegetable {
 
     if (obj.season) {
     this.seasonKoef = 1.3;
-  } 
+  } else {
+     this.seasonKoef = 1.0;
+  }
 }
 
 getPrice() {
-  if(this.season) {
-    this.price = this.price * this.seasonkoef
+  if(this.seasonKoef) {
+    this.price = this.price * this.seasonKoef
   } 
   return this.price
 }
@@ -45,4 +47,4 @@ const modVegetables = vegetables.map(el => new Vegetable(el));
 
 const listVegetables = modVegetables.map((el) => `<li>${el.getInfo()}</li>`);
 
-document.write(`<ul>${listVegetables}</ul>`);
+document.write(`<ul>${listVegetables.join('')}</ul>`);
