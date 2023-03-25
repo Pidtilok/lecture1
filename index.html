@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>NAME</legend>
+      <label for="name">Ім'я клієнта</label>
+      <input name="name" id="name" type="text" placeholder="Ім'я" required>
+    </fieldset>
+  
+    <fieldset>
+      <legend>SIZE</legend>
+      <label for="size">Розмір гамбургера</label>
+      <select name="size" id="size" required>
+        <option value="" disabled>Оберіть</option>
+        <option value="small">Маленький</option>
+        <option value="big">Великий</option>
+      </select>
+    </fieldset>
+  
+    <fieldset>
+      <legend>TOPPING</legend>
+      <div>
+        <label for="cheese">Із сиром</label>
+        <input type="radio" name="topping" id="cheese" value="cheese" required>
+      </div>
+      <div>
+        <label for="salad">Із салатом</label>
+        <input type="radio" name="topping" id="salad" value="salad" required>
+      </div>
+      <div>
+        <label for="potato">Із картоплею</label>
+        <input type="radio" name="topping" id="potato" value="potato" required>
+      </div>
+    </fieldset>
+  
+    <fieldset>
+      <legend>SPICES</legend>
+      <div>
+        <label for="sauce">Додати приправи</label>
+        <input type="radio" name="spices" id="sauce" value="spices" required>
+      </div>
+      <div>
+        <label for="mayo">Додати майонез</label>
+        <input type="radio" name="spices" id="mayo" value="mayo" required>
+      </div>
+    </fieldset>
+  
+    <fieldset>
+      <div>
+        <label for="message">Ваші побажання</label>
+        <textarea id="message" required></textarea>
+      </div>
+    </fieldset>
+  
+    <fieldset>
+      <div>
+        <input type="submit">
+        <input type="reset">
+      </div>
+    </fieldset>
+  
+  </form>
+  
+    <script src="script.js"></script>
+</body>
+</html>
