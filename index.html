@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="main"> 
+      <p class="head">MSI 2020</p>
+  
+      <h1>Hey!</h1>
+      <p class="description">Let’s try to find a joke for you:</p>
+  
+      <form class="form">
+        <div class="random">
+          <input type="radio" name="joke" id="random" value="Random">
+          <label for="random">Random</label>
+        </div>
+        <div class="categor">
+          <input type="radio" name="joke" id="category" value="From categories">
+          <label for="category">From caterogies</label>
+          <div class="categories">
+            <input type="button" value="ANIMAL" class="animal">
+            <input type="button" value="CARRER" class="carrer">
+            <input type="button" value="CELEBRITY" class="celebrity">
+            <input type="button" value="DEV" class="dev">
+          </div>
+        </div>
+  
+        <div class="search">
+          <input type="radio" name="joke" id="search" value="Search"> 
+          <label for="search">Search</label> <br>
+          <div id="search-joke">
+            <input type="text" id="keyword" name="keyword">
+          </div>
+        </div>
+
+  
+        <div>
+          <button class="button" type="submit">Get a joke</button>
+        </div>
+      </form>
+      <div>
+        <p id="wrapper">
+        </p>
+      </div>
+    </div>
+
+    <div class="favorites">
+      <h2 class="title">Favorite</h2>
+      <p id="liked"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
