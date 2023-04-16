@@ -30,7 +30,8 @@ let render = (hero) => {
     createHerosWrapper.append(heroBlock)
 
     let deleteBtn = heroBlock.querySelector('.delete')
-    deleteBtn.addEventListener('click', async () => {
+    deleteBtn.addEventListener('click', async (e) => {
+      e.preventDefault()
     await deleteHero(hero.id)
     heroBlock.remove()
   })
