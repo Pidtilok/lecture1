@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+#createHeros {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 25px;
+}
