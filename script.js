@@ -18,8 +18,8 @@ let render = (hero) => {
     </div>
 
     <div>
-      <label for="" data-name="favourite" ${hero.favourite ? 'checked' : ''}>Favourite:</label>
-      <input type="checkbox">
+      <label for="" data-name="favourite">Favourite:</label>
+      <input type="checkbox" ${hero.favourite ? 'checked' : ''}>
     </div>
 
     <div>
@@ -88,6 +88,7 @@ form.addEventListener('submit', (e) => {
     favourite: favourite.checked,
   }
   createHero(newHero)
+  name.value = "";
 })
 
 let getExistedHeros = async() => {
