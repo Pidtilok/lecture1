@@ -62,7 +62,6 @@ cart.forEach((item) => {
     }
   }
 
-
   const total = document.createElement("span");
   total.classList.add("cart__product-total");
   if (item.sale) {
@@ -74,7 +73,6 @@ cart.forEach((item) => {
     total.textContent = `$${totalValue.toFixed(1)}`;
   }
   productElement.appendChild(total);
-  
 
   const deleteBtn = document.createElement("img");
   deleteBtn.classList.add("cart__product-delete");
@@ -93,7 +91,6 @@ cart.forEach((item) => {
 
   cartContainer.appendChild(productElement);
 });
-
 
 const totalItem = document.querySelector(".order__item");
 const totalPrice = document.createElement("span");
@@ -116,17 +113,7 @@ function updateTotalPrice() {
 
 updateTotalPrice();
 
-
-const completeBtn = document.querySelector('.order__btn')
+const completeBtn = document.querySelector(".order__btn");
 completeBtn.addEventListener("click", () => {
-  window.location.href = './account.html'
-})
-
-
-
-
-
-
-
-
-
+  window.location.href = "./account.html";
+});

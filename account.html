@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a class="logo__link" href="./index.html">
+            <img class="logo__image" src="./images/logo.png" alt="" />
+          </a>
+        </div>
 
-  <header class="header">
-  <div class="container">
-    <div class="logo">
-      <a class="logo__link" href="./index.html">
-        <img class="logo__image" src="./images/logo.png" alt="">
-      </a>
-    </div>
+        <div class="menu">
+          <div class="menu__greeting">Hi,</div>
+          <div class="menu__login">
+            <a class="menu__login-link" href="./sing.html">Log in</a>
+          </div>
 
-    <div class="menu">
-      <div class="menu__greeting">Hi,</div>
-      <div class="menu__login">
-        <a class="menu__login-link" href="./sing.html">Log in</a>
-      </div>
-      
-      <div>
-        <a class="logout-button">Log out</a>
-      </div>
+          <div>
+            <a class="logout-button">Log out</a>
+          </div>
 
-      <div class="menu__image">
-        <a class="memu__image-link" href="./shoppingCart.html">
-          <img class="memu__image-picture" src="./images/shopping-cart.png" alt="">
-        </a>
-      </div>
+          <div class="menu__image">
+            <a class="memu__image-link" href="./shoppingCart.html">
+              <img
+                class="memu__image-picture"
+                src="./images/shopping-cart.png"
+                alt=""
+              />
+            </a>
+          </div>
 
-      <div class="cart__count"></div>
-    </div>
-  </div>
-  </header>
-
-  <main class="main">
-
-    <div class="containerItems">
-      <div id="orderedItems">
-        <h1 class="orderedItems__title">Ordered Items</h1>
-        <div class="orderedItems__description">
-          <h2 class="orderedItems__description-title">Item Description</h2>
-          <h2 class="orderedItems__description-title">Price</h2>
-          <h2 class="orderedItems__description-title">Sale</h2>
-          <h2 class="orderedItems__description-title">Quantity</h2>
-          <h2 class="orderedItems__description-title">Total</h2>
+          <div class="cart__count"></div>
         </div>
       </div>
+    </header>
 
-    <div class="info">
-      <h1 class="info__title">My Info</h1>
-      <div class="info__item"></div>
+    <main class="main">
+      <div class="containerItems">
+        <div id="orderedItems">
+          <h1 class="orderedItems__title">Ordered Items</h1>
+          <div class="orderedItems__description">
+            <h2 class="orderedItems__description-title">Item Description</h2>
+            <h2 class="orderedItems__description-title">Price</h2>
+            <h2 class="orderedItems__description-title">Sale</h2>
+            <h2 class="orderedItems__description-title">Quantity</h2>
+            <h2 class="orderedItems__description-title">Total</h2>
+          </div>
+        </div>
 
-      <button class="info__btn">Delete Account</button>
-    </div>
+        <div class="info">
+          <h1 class="info__title">My Info</h1>
+          <div class="info__item"></div>
 
-  </div>
-  </main>
+          <button class="info__btn">Delete Account</button>
+        </div>
+      </div>
+    </main>
     <script src="js.js"></script>
     <script src="sign.js"></script>
     <script src="shoppingCart.js"></script>
     <script src="account.js"></script>
-    
-</body>
+  </body>
 </html>

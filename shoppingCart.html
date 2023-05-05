@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a class="logo__link" href="./index.html">
+            <img class="logo__image" src="./images/logo.png" alt="" />
+          </a>
+        </div>
 
-  <header class="header">
-  <div class="container">
-    <div class="logo">
-      <a class="logo__link" href="./index.html">
-        <img class="logo__image" src="./images/logo.png" alt="">
-      </a>
-    </div>
+        <div class="menu">
+          <div class="menu__greeting">Hi,</div>
+          <div class="menu__login">
+            <a class="menu__login-link" href="./sing.html">Log in</a>
+          </div>
 
-    <div class="menu">
-      <div class="menu__greeting">Hi,</div>
-      <div class="menu__login">
-        <a class="menu__login-link" href="./sing.html">Log in</a>
+          <div>
+            <a class="logout-button">Log out</a>
+          </div>
+
+          <div class="menu__image">
+            <a class="memu__image-link" href="./shoppingCart.html">
+              <img
+                class="memu__image-picture"
+                src="./images/shopping-cart.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="cart__count"></div>
+        </div>
       </div>
+    </header>
 
-      <div>
-        <a class="logout-button">Log out</a>
+    <main>
+      <div class="containerItems">
+        <div id="shoppingItems">
+          <h1 class="shoppingItems__title">Items in Shopping Cart</h1>
+          <div class="shoppingItems__description">
+            <h2 class="shoppingItems__description-title">Item Description</h2>
+            <h2 class="shoppingItems__description-title">Price</h2>
+            <h2 class="shoppingItems__description-title">Sale</h2>
+            <h2 class="shoppingItems__description-title">Quantity</h2>
+            <h2 class="shoppingItems__description-title">Total</h2>
+            <h2 class="shoppingItems__description-title">Action</h2>
+          </div>
+        </div>
+
+        <div id="cartIcon"></div>
+
+        <div class="order">
+          <h1 class="order__title">My Order Summary</h1>
+          <div class="order__item">
+            <span class="order__descript">Order Total</span>
+          </div>
+          <button class="order__btn">Complete Order</button>
+        </div>
       </div>
-
-      <div class="menu__image">
-        <a class="memu__image-link" href="./shoppingCart.html">
-          <img class="memu__image-picture" src="./images/shopping-cart.png" alt="">
-        </a>
-      </div>
-      <div class="cart__count"></div>
-    </div>
-  </div>
-  </header>
-
-  <main>
-  <div class="containerItems">
-    <div id="shoppingItems">
-      <h1 class="shoppingItems__title">Items in Shopping Cart</h1>
-      <div class="shoppingItems__description">
-        <h2 class="shoppingItems__description-title">Item Description</h2>
-        <h2 class="shoppingItems__description-title">Price</h2>
-        <h2 class="shoppingItems__description-title">Sale</h2>
-        <h2 class="shoppingItems__description-title">Quantity</h2>
-        <h2 class="shoppingItems__description-title">Total</h2>
-        <h2 class="shoppingItems__description-title">Action</h2>
-      </div>
-    </div>
-
-    <div id="cartIcon"></div>
-
-    <div class="order">
-      <h1 class="order__title">My Order Summary</h1>
-      <div class="order__item">
-        <span class="order__descript">Order Total</span>
-      </div>
-      <button class="order__btn">Complete Order</button>
-  </div>
-</div>  
-  
-</main>
+    </main>
     <script src="js.js"></script>
     <script src="sign.js"></script>
     <script src="shoppingCart.js"></script>
     <script src="account.js"></script>
-</body>
+  </body>
 </html>

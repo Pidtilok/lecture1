@@ -34,10 +34,10 @@ selectedItems.forEach((item) => {
   quantity.classList.add("ordered__product-quantity");
   quantity.textContent = item.count || 1;
   productElement.appendChild(quantity);
-  
+
   const totalCost = document.createElement("span");
   totalCost.classList.add("ordered__product-total-cost");
-  totalCost.textContent = "$" + (item.price * (item.count || 1));
+  totalCost.textContent = "$" + item.price * (item.count || 1);
   productElement.appendChild(totalCost);
 
   orderedItemsContainer.appendChild(productElement);
@@ -45,29 +45,24 @@ selectedItems.forEach((item) => {
 
 localStorage.removeItem("shoppingCart");
 
-
 const deleteAccountButton = document.querySelector(".info__btn");
 deleteAccountButton.addEventListener("click", () => {
-    fetch(`${usersUrl}?name=${localStorage.getItem('userName')}`)
-      .then(response => response.json())
-      .then(data => {
-        const user = data[0];
-        user.status = false;
-        localStorage.removeItem('userStatus');
-        localStorage.removeItem('userName');
-        fetch(`${usersUrl}/${user.id}`, {
-          method: 'PUT',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(user)
-        })
-          .then(() => {
-            window.location.href = './index.html';
-          })
-          .catch(error => console.error(error));
+  fetch(`${usersUrl}?name=${localStorage.getItem("userName")}`)
+    .then((response) => response.json())
+    .then((data) => {
+      const user = data[0];
+      user.status = false;
+      localStorage.removeItem("userStatus");
+      localStorage.removeItem("userName");
+      fetch(`${usersUrl}/${user.id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(user),
       })
-      .catch(error => console.error(error));
-  });
-
-
-
-
+        .then(() => {
+          window.location.href = "./index.html";
+        })
+        .catch((error) => console.error(error));
+    })
+    .catch((error) => console.error(error));
+});
