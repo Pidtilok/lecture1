@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+  
+    <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a class="logo__link" href="./index.html">
+          <img class="logo__image" src="./images/logo.png" alt="">
+        </a>
+      </div>
+  
+      <div class="menu">
+        <div class="menu__greeting">Hi,</div>
+        <div class="menu__login">
+          <a class="menu__login-link" href="./sing.html">Log in</a>
+        </div>
+
+        <div>
+          <a class="logout-button">Log out</a>
+        </div>
+
+        <div class="menu__image">
+          <a class="memu__image-link" href="./shoppingCart.html">
+            <img class="memu__image-picture" src="./images/shopping-cart.png" alt="">
+          </a>
+        </div>
+        <div class="cart__count"></div>
+      </div>
+    </div>
+    </header>
+
+    <main>
+      <div class="containerSing">
+
+        <div class="sing">
+          <h1 class="title">Secure Sing In</h1>
+          <p class="sing__description">For current customers</p>
+          <form class="login-form">
+            <div class="error"></div>
+            <div>
+              <label for="email"></label>
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div>
+              <label for="password"></label>
+              <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="submit">Sign in</button>
+          </form>
+        </div>
+
+        <div class="registr">
+          <h1 class="title">Quick Registration</h1>
+          <p class="registr__description">For new customers</p>
+          <form class="registr__form">
+            <div class="error"></div>
+            <div>
+              <label for="name"></label>
+              <input type="text" id="name" placeholder="Full name" required>
+            </div>
+            <div>
+              <label for="verifyEmail"></label>
+              <input type="email" id="verifyEmail" name="email" placeholder="Email Address" required>
+            </div>
+            <div>
+              <label for="verifyPassword"></label>
+              <input type="password" id="verifyPassword" name="password" placeholder="Password" required>
+            </div>
+            <div>
+              <label for="verify"></label>
+              <input type="password" id="verify" placeholder="Verify Password" required>
+            </div>
+            <button type="submit">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </main>
+      <script src="js.js"></script>
+      <script src="sign.js"></script>
+      <script src="shoppingCart.js"></script>
+      <script src="account.js"></script>
+  </body>
+</html>
